@@ -1,2 +1,2 @@
 
-[![qingchen's github stats](https://github-readme-stats.vercel.app/api?username=JOYCEQL)](https://github.com/mango-lzp/github-readme-stats)
+[![qingchen's github stars](https://github-readme-stats.vercel.app/api?username=JOYCEQL)](https://github.com/JOYCEQL/github-readme-stars)
