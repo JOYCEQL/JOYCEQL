@@ -22,14 +22,6 @@ I'm a frontend developer who is passionate about making the web better.
 
 **📊 This Week I Spent My Time On:**
 
-<!--START_SECTION:waka-->
-```text
-TypeScript   6 hrs 15 mins   ███████████░░░░░░░   45.72 % 
-Vue.js       4 hrs 12 mins   ███████░░░░░░░░░░░   30.81 % 
-JavaScript   2 hrs 05 mins   ███░░░░░░░░░░░░░░░   15.32 % 
-JSON         45 mins         █░░░░░░░░░░░░░░░░░   05.55 % 
-Other        21 mins         █░░░░░░░░░░░░░░░░░   02.60 % 
-```
-<!--END_SECTION:waka-->
-
+<!--START_SECTION:shields-->
+<!--END_SECTION:shields-->
 ---
