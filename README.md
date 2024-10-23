@@ -1,11 +1,9 @@
 ### Hi there 👋
 
-<img align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=JOYCEQL&show_icons=true&theme=tokyonight" />
-
 I'm a frontend developer who is passionate about making the web better. 
 
 - 🔭 I'm currently working on something cool 😉
-- 🌱 I'm currently learning Web3 and AI
+- 🌱 I'm currently learning FE
 - 💬 Ask me about anything related to Vue/React/Node.js
 
 **🛠 Languages and Tools:**
