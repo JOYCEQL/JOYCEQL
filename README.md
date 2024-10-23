@@ -7,7 +7,6 @@ I'm a frontend developer who is passionate about making the web better.
 - 🔭 I'm currently working on something cool 😉
 - 🌱 I'm currently learning Web3 and AI
 - 💬 Ask me about anything related to Vue/React/Node.js
-- 📫 How to reach me: your.email@example.com
 
 **🛠 Languages and Tools:**
 
@@ -34,4 +33,3 @@ Other        21 mins         █░░░░░░░░░░░░░░░░
 <!--END_SECTION:waka-->
 
 ---
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=JOYCEQL&theme=tokyonight" />
