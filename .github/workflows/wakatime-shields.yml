@@ -1,0 +1,101 @@
+name: WakaTime Shields
+
+on:
+  schedule:
+    - cron: "0 0 * * *"  # 每天更新
+  workflow_dispatch:      # 支持手动触发
+  
+jobs:
+  update-shields:
+    name: Update README with Dynamic Shields
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GH_TOKEN }}  # 添加 token 用于推送更改
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+          
+      - name: Install dependencies
+        run: npm install axios
+
+      - name: Update README with WakaTime Stats
+        uses: actions/github-script@v6
+        env:
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+        with:
+          script: |
+            const fs = require('fs');
+            const axios = require('axios');
+            
+            // 获取 WakaTime 数据
+            async function getWakaTimeStats() {
+              try {
+                const response = await axios.get(
+                  'https://wakatime.com/api/v1/users/current/stats/last_7_days',
+                  {
+                    headers: {
+                      'Authorization': `Basic ${Buffer.from(process.env.WAKATIME_API_KEY).toString('base64')}`
+                    }
+                  }
+                );
+                
+                return response.data.data.languages;
+              } catch (error) {
+                console.error('Error fetching WakaTime stats:', error);
+                throw error;
+              }
+            }
+            
+            // 获取语言对应的颜色
+            const languageColors = {
+              JavaScript: 'F7DF1E',
+              TypeScript: '3178C6',
+              'Vue.js': '4FC08D',
+              React: '61DAFB',
+              Python: '3776AB',
+              Java: '007396',
+              HTML: 'E34F26',
+              CSS: '1572B6',
+              PHP: '777BB4',
+              Ruby: 'CC342D',
+            };
+            
+            try {
+              // 获取 WakaTime 统计数据
+              const stats = await getWakaTimeStats();
+              
+              // 生成 shields
+              const shields = stats.slice(0, 5).map(lang => {
+                const percentage = lang.percent.toFixed(1);
+                const color = languageColors[lang.name] || '333333';
+                const encodedLang = encodeURIComponent(lang.name);
+                
+                return `![${lang.name}](https://img.shields.io/badge/${encodedLang}-${percentage}%25-${color}?style=for-the-badge&logo=${lang.name.toLowerCase()})`;
+              }).join(' ');
+              
+              // 更新 README
+              let readme = fs.readFileSync('README.md', 'utf8');
+              const newContent = `<!--START_SECTION:shields-->\n${shields}\n<!--END_SECTION:shields-->`;
+              readme = readme.replace(
+                /<!--START_SECTION:shields-->[\s\S]*<!--END_SECTION:shields-->/,
+                newContent
+              );
+              
+              fs.writeFileSync('README.md', readme);
+              
+            } catch (error) {
+              console.error('Error updating shields:', error);
+              throw error;
+            }
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add README.md
+          git commit -m "Update WakaTime stats" || exit 0
+          git push
