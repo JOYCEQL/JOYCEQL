@@ -21,6 +21,6 @@ I'm a frontend developer who is passionate about making the web better.
 **📊 Recently My Time On:**
 
 <!--START_SECTION:shields-->
-![TypeScript](https://img.shields.io/badge/TypeScript-99.9%25-3178C6?style=for-the-badge&logo=typescript) ![JavaScript](https://img.shields.io/badge/JavaScript-0.1%25-F7DF1E?style=for-the-badge&logo=javascript)
+![TypeScript](https://img.shields.io/badge/TypeScript-100.0%25-3178C6?style=for-the-badge&logo=typescript)
 <!--END_SECTION:shields-->
 ---
