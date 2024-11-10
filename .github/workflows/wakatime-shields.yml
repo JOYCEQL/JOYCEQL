@@ -94,8 +94,8 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git config --global user.name 'JOYCEQL'
+          git config --global user.email '1449239013@qq.com'
           git add README.md
           git commit -m "Update WakaTime stats" || exit 0
           git push
