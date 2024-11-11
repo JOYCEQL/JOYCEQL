@@ -21,6 +21,6 @@ I'm a frontend developer who is passionate about making the web better.
 **📊 Recently My Time On:**
 
 <!--START_SECTION:shields-->
-![TypeScript](https://img.shields.io/badge/TypeScript-65.6%25-3178C6?style=for-the-badge&logo=typescript) ![JSON](https://img.shields.io/badge/JSON-13.3%25-333333?style=for-the-badge&logo=json) ![JavaScript](https://img.shields.io/badge/JavaScript-11.3%25-F7DF1E?style=for-the-badge&logo=javascript) ![Vue.js](https://img.shields.io/badge/Vue.js-2.3%25-4FC08D?style=for-the-badge&logo=vue.js) ![Rust](https://img.shields.io/badge/Rust-2.1%25-333333?style=for-the-badge&logo=rust)
+![TypeScript](https://img.shields.io/badge/TypeScript-95.1%25-3178C6?style=for-the-badge&logo=typescript) ![JSON](https://img.shields.io/badge/JSON-3.7%25-333333?style=for-the-badge&logo=json) ![JavaScript](https://img.shields.io/badge/JavaScript-1.2%25-F7DF1E?style=for-the-badge&logo=javascript) ![Git Config](https://img.shields.io/badge/Git%20Config-0.1%25-333333?style=for-the-badge&logo=git config) ![YAML](https://img.shields.io/badge/YAML-0.0%25-333333?style=for-the-badge&logo=yaml)
 <!--END_SECTION:shields-->
 ---
