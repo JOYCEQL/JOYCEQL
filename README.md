@@ -21,6 +21,6 @@ I'm a frontend developer who is passionate about making the web better.
 **📊 Recently My Time On:**
 
 <!--START_SECTION:shields-->
-![TypeScript](https://img.shields.io/badge/TypeScript-97.8%25-3178C6?style=for-the-badge&logo=typescript) ![JavaScript](https://img.shields.io/badge/JavaScript-0.7%25-F7DF1E?style=for-the-badge&logo=javascript) ![HTML](https://img.shields.io/badge/HTML-0.5%25-E34F26?style=for-the-badge&logo=html) ![CSS](https://img.shields.io/badge/CSS-0.3%25-1572B6?style=for-the-badge&logo=css) ![Image (svg)](https://img.shields.io/badge/Image%20(svg)-0.2%25-333333?style=for-the-badge&logo=image (svg))
+![TypeScript](https://img.shields.io/badge/TypeScript-98.1%25-3178C6?style=for-the-badge&logo=typescript) ![JavaScript](https://img.shields.io/badge/JavaScript-0.9%25-F7DF1E?style=for-the-badge&logo=javascript) ![CSS](https://img.shields.io/badge/CSS-0.3%25-1572B6?style=for-the-badge&logo=css) ![Image (svg)](https://img.shields.io/badge/Image%20(svg)-0.2%25-333333?style=for-the-badge&logo=image (svg)) ![Markdown](https://img.shields.io/badge/Markdown-0.2%25-333333?style=for-the-badge&logo=markdown)
 <!--END_SECTION:shields-->
 ---
